@@ -41,3 +41,17 @@
     opacity: 1;
   }
 }
+
+.card {
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.front {
+  overflow: hidden;
+}

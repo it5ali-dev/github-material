@@ -34,3 +34,28 @@ function ShowReview() {
   userPics[i].classList.add("active-pic");
   userTexts[i].classList.add("active-text");
 }
+
+const toggleBtn = document.getElementById("toggleBtn");
+
+const cardFront1 = document.querySelector("#card-1-front");
+const cardBack1 = document.querySelector("#card-1-back");
+const cardFront2 = document.querySelector("#card-2-front");
+const cardBack2 = document.querySelector("#card-2-back");
+const cardFront3 = document.querySelector("#card-3-front");
+const cardBack3 = document.querySelector("#card-3-back");
+// const front = document.querySelector(".front");
+// const back = document.querySelector(".back");
+
+toggleBtn.addEventListener("change", () => {
+  cardFront1.classList.toggle("-rotate-y-180");
+  cardFront1.classList.toggle("hidden");
+  cardBack1.classList.toggle("rotate-y-180");
+
+  cardFront2.classList.toggle("-rotate-y-180");
+  cardFront2.classList.toggle("hidden");
+  cardBack2.classList.toggle("rotate-y-180");
+
+  cardFront3.classList.toggle("-rotate-y-180");
+  cardFront3.classList.toggle("hidden");
+  cardBack3.classList.toggle("rotate-y-180");
+});
