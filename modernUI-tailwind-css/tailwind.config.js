@@ -15,9 +15,15 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: {
-        default: "20px",
-        md: "50px",
+      // padding: {
+      //   default: "20px",
+      //   md: "50px",
+      // },
+      screens: {
+        sm: "100%", // Small screens
+        md: "80%", // Medium screens
+        lg: "80%", // Large screens
+        xl: "80%", // Extra-large screens
       },
     },
   },

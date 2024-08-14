@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-primary text-white tracking-wider">
+    <!-- navbar -->
     <header>
-      <nav class="container flex justify-between items-center px-5">
+      <nav class="container px-16 lg:px-20 flex justify-between items-center">
         <div class="py-5 text-secondary font-bold text-3xl">
           <a href="#home"> <span class="text-white">Light</span>Code.</a>
         </div>
@@ -39,11 +40,7 @@
             </li>
 
             <li>
-              <button
-                class="bg-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200"
-              >
-                Free Trial
-              </button>
+              <button class="btn">Free Trial</button>
             </li>
           </ul>
         </div>
@@ -52,6 +49,7 @@
         <div id="bars" class="lg:hidden z-50">
           <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
         </div>
+
         <div
           id="menu"
           class="hidden bg-primary-dark h-[100vh] absolute inset-0"
@@ -87,6 +85,298 @@
         </div>
       </nav>
     </header>
+
+    <!-- hero section -->
+    <main>
+      <section id="home" class="relative">
+        <div
+          class="h-80 w-80 bg-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+
+        <div
+          class="h-80 w-80 bg-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+
+        <div class="container lg:px-20 p-5 py-20 lg:h-[100vh] sm:h-full">
+          <div
+            class="flex flex-col items-center justify-between z-20 md:flex-row"
+          >
+            <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+              <h1 class="title mb-4">Awesome app for your financial.</h1>
+              <p class="leading-relaxed mb-10 text-2xl mx-auto lg:mx-0 w-[80%]">
+                This should be used to tell story and let your users know a
+                little more about app and it's use. How can benefit them
+              </p>
+              <button class="btn">Download App</button>
+            </div>
+
+            <div class="md:w-1/2 flex justify-end mx-auto">
+              <img src="./assets/hero4.png" class="h-[80vh]" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section id="features" class="bg-primary-light">
+        <div class="container px-16 lg:px-20 py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2">
+            <h4 class="text-secondary font-bold text-center text-2xl">
+              Our Future
+            </h4>
+            <h1 class="title my-4">
+              Easy To Manage Your All Payments By Our App
+            </h1>
+          </div>
+
+          <!-- cards -->
+          <div
+            class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 sm:px-6 lg:px-20 px-4"
+          >
+            <!-- card 1 -->
+            <div
+              class="border-2 border-gray text-center py-20 px-10 rounded-2xl cursor-pointer hover:bg-primary-dark ease-in duration-200"
+            >
+              <div class="bg-secondary inline-block rounded-2xl py-5 px-6">
+                <i class="fa-solid fa-calendar-days text-4xl"></i>
+              </div>
+              <h3 class="text-3xl font-bold py-4">Expense Trackering</h3>
+              <p class="text-2xl font-light leading-relaxed">
+                We use an application designed a testing gnose to keep away.
+              </p>
+            </div>
+
+            <!-- card 2 -->
+            <div
+              class="bg-primary-dark border-2 border-gray text-center py-20 px-10 rounded-2xl cursor-pointer hover:bg-primary-light ease-in duration-200"
+            >
+              <div class="bg-secondary inline-block rounded-2xl py-5 px-6">
+                <i class="fa-solid fa-chart-column text-4xl"></i>
+              </div>
+              <h3 class="text-3xl font-bold py-4">Finance Snapshot</h3>
+              <p class="text-2xl font-light leading-relaxed">
+                We use an application designed a testing gnose to keep away.
+              </p>
+            </div>
+
+            <!-- card 3 -->
+            <div
+              class="border-2 border-gray text-center py-20 px-10 rounded-2xl cursor-pointer hover:bg-primary-dark ease-in duration-200"
+            >
+              <div class="bg-secondary inline-block rounded-2xl py-5 px-6">
+                <i class="fa-solid fa-phone text-4xl"></i>
+              </div>
+              <h3 class="text-3xl font-bold py-4">Support 24/7</h3>
+              <p class="text-2xl font-light leading-relaxed">
+                We use an application designed a testing gnose to keep away.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- saving money -->
+      <section id="saving-money" class="relative">
+        <div
+          class="h-80 w-80 bg-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+
+        <div
+          class="h-80 w-80 bg-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full"
+        ></div>
+
+        <div class="container lg:px-20 p-5 py-20 lg:h-[100vh] sm:h-full">
+          <div
+            class="flex flex-col items-center justify-between z-20 md:flex-row"
+          >
+            <div class="md:w-1/2 flex justify-center mx-auto">
+              <img src="./assets/hero3.png" class="h-[80vh]" alt="" />
+            </div>
+
+            <div
+              class="text-center mb-12 md:text-left md:w-1/2 md:pr-10 md:pl-12"
+            >
+              <h3 class="text-secondary text-2xl font-bold mb-4">
+                Saving Money
+              </h3>
+              <h1 class="title mb-4">Best Financing App To Save Your Money</h1>
+              <p
+                class="leading-relaxed mb-10 text-2xl mx-auto lg:mx-0 md:w-[90%] w-[85%]"
+              >
+                Best financing app ever in the world. Easy to use and very user
+                friendly for mobile banking. You can control you card easily and
+                send money someone with just one click.
+              </p>
+              <button class="btn w-fit">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- how it work -->
+      <section id="works" class="bg-primary-light py-14">
+        <div class="container px-16 lg:px-20">
+          <div class="text-center m-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-secondary text-2xl mb-4">How It Works</h4>
+            <h1 class="title px-8">Grow Up Your Money Saving</h1>
+          </div>
+
+          <!-- cards -->
+          <div
+            class="flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- card1 -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative bg-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-secondary ease-in duration-200"
+              >
+                <p
+                  class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('./assets/line.png')] lg:after:absolute lg:after:top-4 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52"
+                >
+                  1
+                </p>
+              </div>
+              <h3 class="text-3xl font-bold py-4">Install The App</h3>
+              <p class="text-xl font-light leading-relaxed w-[80%] mx-auto">
+                We use an application designed a testing gnose to keep away.
+              </p>
+            </div>
+
+            <!-- card2 -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-secondary hover:bg-primary-light hover:border-secondary hover:border"
+              >
+                <p
+                  class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('./assets/line-bottom.png')] lg:after:absolute lg:after:top-10 lg:after:left-32 2xl:after:left-52 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52"
+                >
+                  2
+                </p>
+              </div>
+              <h3 class="text-3xl font-bold py-4">Setup Your Profile</h3>
+              <p class="text-xl font-light leading-relaxed w-[80%] mx-auto">
+                We use an application designed a testing gnose to keep away.
+              </p>
+            </div>
+
+            <!-- card3 -->
+            <div class="text-center cursor-pointer">
+              <div
+                class="relative bg-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-secondary ease-in duration-200"
+              >
+                <p class="text-6xl">3</p>
+              </div>
+              <h3 class="text-3xl font-bold py-4">Enjoy The Features</h3>
+              <p class="text-xl font-light leading-relaxed w-[80%] mx-auto">
+                We use an application designed a testing gnose to keep away.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews -->
+      <section id="testimonial">
+        <div class="container px-16 lg:px-20 py-20">
+          <div class="text-center m-auto mb-20 md:w-1/2">
+            <h4 class="font-bold text-secondary text-2xl mb-4">User Reviews</h4>
+            <h1 class="title px-8">
+              What Client Say About Our App After Use It
+            </h1>
+          </div>
+
+          <!-- review container -->
+          <div class="mt-8">
+            <div class="flex items-center justify-center flex-wrap">
+              <img
+                src="./assets/user1.jpg"
+                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic active-pic"
+                alt=""
+                onclick="ShowReview()"
+              />
+              <img
+                src="./assets/user2.jpg"
+                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                alt=""
+                onclick="ShowReview()"
+              />
+              <img
+                src="./assets/user3.jpg"
+                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                alt=""
+                onclick="ShowReview()"
+              />
+              <img
+                src="./assets/user4.jpg"
+                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                alt=""
+                onclick="ShowReview()"
+              />
+              <img
+                src="./assets/user5.jpg"
+                class="h-20 w-20 rounded-full p-1 m-3 cursor-pointer user-pic"
+                alt=""
+                onclick="ShowReview()"
+              />
+            </div>
+
+            <div
+              class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]"
+            >
+              <div class="user-text active-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story and include any
+                  testimonials you might have about your product or service for
+                  your clients"!
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Markin Nesus</h4>
+                <p>IOS Developer</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story and include any
+                  testimonials you might have about your product or service for
+                  your clients"!
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Vera Duncan</h4>
+                <p>Flutter Developer</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story and include any
+                  testimonials you might have about your product or service for
+                  your clients"!
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Pirtle Karol</h4>
+                <p>Android Developer</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story and include any
+                  testimonials you might have about your product or service for
+                  your clients"!
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Mark Joe</h4>
+                <p>React Developer</p>
+              </div>
+
+              <div class="user-text">
+                <p class="md:text-2xl mb-6">
+                  "This should be used to tell a story and include any
+                  testimonials you might have about your product or service for
+                  your clients"!
+                </p>
+                <h4 class="font-bold text-secondary mb-1">Leila Domniuc</h4>
+                <p>Angular Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./script.js"></script>
   </body>
