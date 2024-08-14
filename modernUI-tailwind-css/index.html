@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern UI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-primary text-white tracking-wider">
+    <header>
+      <nav class="container flex justify-between items-center px-5">
+        <div class="py-5 text-secondary font-bold text-3xl">
+          <a href="#home"> <span class="text-white">Light</span>Code.</a>
+        </div>
+
+        <div>
+          <ul class="hidden lg:flex items-center space-x-6">
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#home">Home</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#features">Features</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#testimonial">Testimonial</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#pricing">Pricing</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#blog">Blog</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#contact">Contact</a>
+            </li>
+
+            <li>
+              <button
+                class="bg-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200"
+              >
+                Free Trial
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Screen -->
+        <div id="bars" class="lg:hidden z-50">
+          <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </div>
+        <div
+          id="menu"
+          class="hidden bg-primary-dark h-[100vh] absolute inset-0"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#home" class="hLink">Home</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#features" class="hLink">Features</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#testimonial" class="hLink">Testimonial</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#pricing" class="hLink">Pricing</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#blog" class="hLink">Blog</a>
+            </li>
+            <li class="hover:text-secondary ease-in duration-200">
+              <a href="#contact" class="hLink">Contact</a>
+            </li>
+
+            <li>
+              <button
+                class="bg-secondary px-9 py-3 rounded-lg capitalize font-bold hover:opacity-80 ease-in duration-200"
+              >
+                Free Trial
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
