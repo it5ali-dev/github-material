@@ -57,9 +57,9 @@
       class="lg:flex justify-center items-center bg-slate-100 h-[80vh] w-full pt-12"
     >
       <div
-        class="container p-0 flex flex-col lg:flex-row justify-center items-center gap-12"
+        class="container p-0 flex flex-col lg:flex-row justify-center items-center gap-24"
       >
-        <div class="flex flex-col gap-4 w-1/2 lg:p-10">
+        <div class="flex flex-col gap-4 lg:w-1/2 w-full lg:p-10">
           <div>
             <h1 class="text-2xl lg:text-5xl leading-tight font-bold">
               Looking to save more on your rental car?
@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <div class="w-1/2 relative z-10">
+        <div class="lg:w-1/2 w-full relative z-10">
           <div
             class="bg-gradient-to-b from-orange-700 to-orange-500 w-2/3 h-[30vh] lg:h-[70vh] absolute top-[-15%] left-[15%] -z-10 rounded-lg"
           ></div>
@@ -107,7 +107,7 @@
         >
           <!-- card 1 -->
           <div
-            class="flex flex-col justify-center items-center p-8 text-center w-2/3 lg:w-auto group gap-3"
+            class="flex flex-col justify-center items-center p-8 text-center lg:w-2/3 w-full lg:w-auto group gap-3"
           >
             <i
               class="ri-map-pin-fill group-hover:text-white border-4 border-white bg-slate-100 text-2xl group-hover:bg-orange-500 py-3 px-4 rounded-lg"
@@ -121,7 +121,7 @@
 
           <!-- card 2 -->
           <div
-            class="flex flex-col justify-center items-center p-8 text-center w-2/3 lg:w-auto group gap-3"
+            class="flex flex-col justify-center items-center p-8 text-center lg:w-2/3 w-full group gap-3"
           >
             <i
               class="ri-calendar-check-fill border-4 border-white bg-slate-100 group-hover:text-white text-2xl group-hover:bg-orange-500 py-3 px-4 rounded-lg"
@@ -135,7 +135,7 @@
 
           <!-- card 3 -->
           <div
-            class="flex flex-col justify-center items-center p-8 text-center w-2/3 lg:w-auto group gap-3"
+            class="flex flex-col justify-center items-center p-8 text-center lg:w-2/3 w-full lg:w-auto group gap-3"
           >
             <i
               class="ri-bookmark-3-fill bg-slate-100 border-4 border-white group-hover:text-white group-hover:bg-orange-500 text-2xl py-3 px-4 rounded-lg"
@@ -145,6 +145,139 @@
               Select your desired rental location from our extensive network of
               car rental spots.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+      <div
+        class="container lg:p-10 flex flex-col lg:flex-row justify-center items-center gap-10"
+      >
+        <div class="lg:w-1/2 w-full">
+          <img src="./assets/service.png" alt="service" />
+        </div>
+
+        <div
+          class="lg:w-1/2 w-full px-16 flex flex-col justify-center items-start gap-4"
+        >
+          <h2 class="text-slate-600 text-lg">BEST SERVICES</h2>
+          <h1 class="text-4xl font-bold">
+            Feel the best experience with our rental deals
+          </h1>
+
+          <!-- cards -->
+          <div class="flex flex-col justify-center items-center gap-4 mt-4">
+            <!-- card1 -->
+            <div
+              class="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-5"
+            >
+              <i
+                class="ri-price-tag-3-fill border-4 text-2xl text-orange-600 border-white bg-slate-100 px-4 py-3 rounded-lg"
+              ></i>
+              <div class="flex flex-col justify-center items-start">
+                <h2 class="text-xl font-semibold">Deals for every budget</h2>
+                <p class="text-slate-700 text-lg">
+                  From economy cars to luxury vehicles, we have something for
+                  everyone, ensuring you get the best value for your money.
+                </p>
+              </div>
+            </div>
+
+            <!-- card2 -->
+            <div
+              class="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-5"
+            >
+              <i
+                class="ri-wallet-fill border-4 text-2xl text-orange-600 border-white bg-slate-100 px-4 py-3 rounded-lg"
+              ></i>
+              <div class="flex flex-col justify-center items-start">
+                <h2 class="text-xl font-semibold">Best price guarantee</h2>
+                <p class="text-slate-700 text-lg">
+                  We ensure you get competitive rates in the market, so you can
+                  book with confidence knowing you're getting the best deal.
+                </p>
+              </div>
+            </div>
+
+            <!-- card3 -->
+            <div
+              class="flex flex-col lg:flex-row justify-start items-start lg:items-center gap-5"
+            >
+              <i
+                class="ri-customer-service-fill border-4 text-2xl text-orange-600 border-white bg-slate-100 px-4 py-3 rounded-lg"
+              ></i>
+              <div class="flex flex-col justify-center items-start">
+                <h2 class="text-xl font-semibold">Support 24/7</h2>
+                <p class="text-slate-700 text-lg">
+                  Our dedicated team is available 24/7 to assist you with any
+                  questions or concerns, ensuring a smooth rental experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- experience -->
+    <section id="experience" class="my-20">
+      <div class="container flex flex-col justify-center items-center gap-20">
+        <div>
+          <h2 class="text-center text-lg text-slate-600 mb-4">
+            CUSTOMER EXPERIENCE
+          </h2>
+          <h1 class="text-4xl max-w-2xl mx-auto text-center font-bold">
+            We are ensuring the best customer experience
+          </h1>
+        </div>
+
+        <div class="relative lg:w-[70vw] bg-red-200">
+          <img src="./assets/experience.png" class="mx-auto" alt="" />
+
+          <div class="absolute top-0 left-0 w-full">
+            <div class="flex flex-col justify-start items-start">
+              <i
+                class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
+              ></i>
+              <h2 class="font-semibold text-lg">Competitive pricing</h2>
+            </div>
+
+            <div class="flex flex-col justify-start items-start">
+              <i
+                class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
+              ></i>
+              <h2 class="font-semibold text-lg">Competitive pricing</h2>
+            </div>
+
+            <div class="flex flex-col justify-start items-start">
+              <i
+                class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
+              ></i>
+              <h2 class="font-semibold text-lg">Competitive pricing</h2>
+            </div>
+
+            <div class="flex flex-col justify-start items-start">
+              <i
+                class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
+              ></i>
+              <h2 class="font-semibold text-lg">Competitive pricing</h2>
+            </div>
+
+            <div class="flex flex-col justify-start items-start">
+              <i
+                class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
+              ></i>
+              <h2 class="font-semibold text-lg">Competitive pricing</h2>
+            </div>
+
+            <div class="flex flex-col justify-start items-start">
+              <i
+                class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
+              ></i>
+              <h2 class="font-semibold text-lg">Competitive pricing</h2>
+            </div>
           </div>
         </div>
       </div>
