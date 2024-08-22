@@ -4,13 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>RentalX</title>
   </head>
-  <body>
-    <h1 class="text-5xl bg-green-300 p-10 text-center font-bold uppercase">
-      hello world
-    </h1>
+  <body class="bg-slate-50">
+    <header>
+      <nav class="w-full bg-slate-100">
+        <div class="h-16 flex justify-between items-center container">
+          <h1 class="text-2xl font-bold tracking-wider">RentalX</h1>
 
+          <div>
+            <ul
+              class="lg:flex justify-center items-center space-x-12 w-auto px-10 ml-28 hidden font-semibold text-lg"
+            >
+              <li><a href="#" class="nav-link">Home</a></li>
+              <li><a href="#rent" class="nav-link">Rent</a></li>
+              <li><a href="#services" class="nav-link">Services</a></li>
+              <li><a href="#ride" class="nav-link">Ride</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="lg:flex justify-center items-center gap-10 hidden text-sm"
+          >
+            <button class="border-2 px-5 py-2 rounded-lg btnHover border-white">
+              Sign Up
+            </button>
+            <button
+              class="btnColor px-5 py-2 rounded-lg text-white btnNonHover border-2 border-white"
+            >
+              Sign In
+            </button>
+          </div>
+
+          <div id="menu" class="md:hidden">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section
+      id="hero"
+      class="lg:flex justify-center items-center bg-slate-100 h-[80vh] w-full pt-12"
+    >
+      <div
+        class="container p-0 flex flex-col lg:flex-row justify-center items-center gap-12"
+      >
+        <div class="flex flex-col gap-4 w-1/2 lg:p-10">
+          <div>
+            <h1 class="text-2xl lg:text-5xl leading-tight font-bold">
+              Looking to save more on your rental car?
+            </h1>
+            <div class="h-[4px] w-8 bg-orange-500 mt-4"></div>
+          </div>
+          <p class="lg:text-lg">
+            Discover RentalX car rental aoptions in India with Rent a Car Select
+            from a range of car options and local specials.
+          </p>
+
+          <div class="flex justify-start items-center mt-4 gap-4">
+            <div
+              class="w-36 shadow-lg rounded-lg overflow-hidden cursor-pointer"
+            >
+              <img src="./assets/apple-store.jpg" alt="Apple" class="" />
+            </div>
+            <div
+              class="w-36 shadow-lg rounded-lg overflow-hidden cursor-pointer"
+            >
+              <img src="./assets/play.png" alt="play" class="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="w-1/2 relative z-10">
+          <div
+            class="bg-gradient-to-b from-orange-700 to-orange-500 w-2/3 h-[30vh] lg:h-[70vh] absolute top-[-15%] left-[15%] -z-10 rounded-lg"
+          ></div>
+          <img src="./assets/hero.png" alt="hero-image" class="w-[80vw] z-20" />
+        </div>
+      </div>
+    </section>
+
+    <!-- how it works -->
+    <section id="work">
+      <div class="container my-20">
+        <div class="lg:w-1/2 mx-auto text-center">
+          <h2 class="text-xl">HOW IT WORKS</h2>
+          <h1 class="text-4xl font-bold">Rentgo following 3 working steps</h1>
+        </div>
+
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-6 mt-10"
+        >
+          <!-- card 1 -->
+          <div
+            class="flex flex-col justify-center items-center p-8 text-center w-2/3 lg:w-auto group gap-3"
+          >
+            <i
+              class="ri-map-pin-fill group-hover:text-white border-4 border-white bg-slate-100 text-2xl group-hover:bg-orange-500 py-3 px-4 rounded-lg"
+            ></i>
+            <h1 class="text-xl font-bold">Choose a location</h1>
+            <p>
+              Select your desired rental location from our extensive network of
+              car rental spots.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="flex flex-col justify-center items-center p-8 text-center w-2/3 lg:w-auto group gap-3"
+          >
+            <i
+              class="ri-calendar-check-fill border-4 border-white bg-slate-100 group-hover:text-white text-2xl group-hover:bg-orange-500 py-3 px-4 rounded-lg"
+            ></i>
+            <h1 class="text-xl font-bold">Choose a location</h1>
+            <p>
+              Select your desired rental location from our extensive network of
+              car rental spots.
+            </p>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="flex flex-col justify-center items-center p-8 text-center w-2/3 lg:w-auto group gap-3"
+          >
+            <i
+              class="ri-bookmark-3-fill bg-slate-100 border-4 border-white group-hover:text-white group-hover:bg-orange-500 text-2xl py-3 px-4 rounded-lg"
+            ></i>
+            <h1 class="text-xl font-bold">Choose a location</h1>
+            <p>
+              Select your desired rental location from our extensive network of
+              car rental spots.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./script.js"></script>
   </body>
 </html>
