@@ -54,7 +54,7 @@
     <!-- hero section -->
     <section
       id="hero"
-      class="lg:flex justify-center items-center bg-slate-100 h-[80vh] w-full pt-12"
+      class="lg:flex justify-center items-center bg-slate-100 h-[100vh] w-full pt-12"
     >
       <div
         class="container p-0 flex flex-col lg:flex-row justify-center items-center gap-24"
@@ -87,7 +87,7 @@
 
         <div class="lg:w-1/2 w-full relative z-10">
           <div
-            class="bg-gradient-to-b from-orange-700 to-orange-500 w-2/3 h-[30vh] lg:h-[70vh] absolute top-[-15%] left-[15%] -z-10 rounded-lg"
+            class="bg-gradient-to-b from-orange-700 to-orange-500 w-2/3 h-[55vh] md:h-[70vh] absolute top-[-15%] left-[15%] -z-10 rounded-lg"
           ></div>
           <img src="./assets/hero.png" alt="hero-image" class="w-[80vw] z-20" />
         </div>
@@ -233,46 +233,62 @@
           </h1>
         </div>
 
-        <div class="relative lg:w-[70vw] bg-red-200">
-          <img src="./assets/experience.png" class="mx-auto" alt="" />
+        <div class="relative lg:w-[70vw] max-h-screen">
+          <img
+            src="./assets/experience.png"
+            class="mx-auto max-h-screen opacity-30 lg:opacity-100"
+            alt=""
+          />
 
           <div class="absolute top-0 left-0 w-full">
-            <div class="flex flex-col justify-start items-start">
+            <div
+              class="flex flex-col justify-start items-start absolute top-20 lg:left-32 -left-12"
+            >
               <i
                 class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
               ></i>
               <h2 class="font-semibold text-lg">Competitive pricing</h2>
             </div>
 
-            <div class="flex flex-col justify-start items-start">
+            <div
+              class="flex flex-col justify-start items-start absolute top-[42vh] lg:left-10 -left-28"
+            >
               <i
                 class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
               ></i>
               <h2 class="font-semibold text-lg">Competitive pricing</h2>
             </div>
 
-            <div class="flex flex-col justify-start items-start">
+            <div
+              class="flex flex-col justify-start items-start absolute top-[75vh] lg:left-32 -left-12"
+            >
               <i
                 class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
               ></i>
               <h2 class="font-semibold text-lg">Competitive pricing</h2>
             </div>
 
-            <div class="flex flex-col justify-start items-start">
+            <div
+              class="flex flex-col justify-start items-end absolute top-20 lg:right-32 -right-12"
+            >
               <i
                 class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
               ></i>
               <h2 class="font-semibold text-lg">Competitive pricing</h2>
             </div>
 
-            <div class="flex flex-col justify-start items-start">
+            <div
+              class="flex flex-col justify-start items-end absolute top-[42vh] lg:right-10 -right-28"
+            >
               <i
                 class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
               ></i>
               <h2 class="font-semibold text-lg">Competitive pricing</h2>
             </div>
 
-            <div class="flex flex-col justify-start items-start">
+            <div
+              class="flex flex-col justify-start items-end absolute top-[75vh] lg:right-32 -right-12"
+            >
               <i
                 class="ri-price-tag-3-fill text-2xl text-orange-600 border-4 py-3 px-4 rounded-lg bg-slate-100 inline-block"
               ></i>
@@ -282,6 +298,51 @@
         </div>
       </div>
     </section>
+
+    <!-- download -->
+    <section id="download">
+      <div
+        class="h-[100vh] w-full flex justify-center items-center relative my-16"
+      >
+        <div
+          class="container bg-gradient-to-b from-orange-600 to-orange-400 -z-10 rounded-lg h-[50vh] flex flex-col lg:flex-row justify-center items-center"
+        >
+          <div
+            class="flex flex-col justify-center items-start lg:w-1/2 w-full text-white px-8 py-10"
+          >
+            <h1 class="text-5xl font-bold">Download the free RentalX app</h1>
+            <p class="text-lg my-6">
+              Download the RentalX app to manage your bookings, find exclusive
+              deals, and access 24/7 support, all from your mobile device.
+            </p>
+            <div class="flex w-full gap-5">
+              <img
+                src="./assets/play.png"
+                alt=""
+                class="w-44 rounded-lg shadow-lg"
+              />
+              <img
+                src="./assets/apple-store.jpg"
+                alt=""
+                class="w-44 rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+
+          <div
+            class="h-screen w-full lg:w-1/2 flex justify-center items-center"
+          >
+            <img
+              src="./assets/car-app.png"
+              class="h-full absolute lg:top-0 top-[80vh] mx-auto"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
     <script src="./script.js"></script>
   </body>
 </html>
