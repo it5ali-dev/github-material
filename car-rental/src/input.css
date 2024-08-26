@@ -9,12 +9,17 @@
 .btnColor {
   background-color: #3c4286;
 }
-.btnHover:hover {
+
+/* .btnHover:hover {
   background-color: #3c4286;
   color: white;
   transition: all 0.5s ease-in-out;
+} */
+
+.btnHover:hover {
+  @apply bg-custom-blue text-white duration-150 ease-in border-2;
 }
 
 .btnNonHover:hover {
-  @apply bg-slate-100 text-black duration-150 ease-in border-2;
+  @apply bg-white text-black duration-150 ease-in border-2;
 }
