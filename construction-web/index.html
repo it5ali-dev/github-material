@@ -37,7 +37,7 @@
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list">
             <li>
-              <a href="#home" class="nav_link">Home</a>
+              <a href="#home" class="nav_link active-link">Home</a>
             </li>
             <li>
               <a href="#about" class="nav_link">About Us</a>
@@ -171,6 +171,7 @@
 
             <a href="#projects" class="button">View Projects</a>
           </div>
+
           <div class="about_images">
             <img
               src="./assets/images/about-img-1.png"
@@ -188,7 +189,7 @@
 
       <!--==================== SERVICES ====================-->
       <section class="services section" id="services">
-        <div class="services container grid">
+        <div class="services_container container grid">
           <div class="services_data">
             <div>
               <span class="section_subtitle">OUR SERVICES</span>
@@ -205,6 +206,7 @@
 
             <a href="#contact" class="button">Contact Now</a>
           </div>
+
           <div class="services_swiper swiper">
             <div class="swiper-wrapper">
               <article class="services_card swiper-slide">
@@ -293,11 +295,13 @@
 
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
-        <span class="section_subtitle"> OUR PROJECTS </span>
-        <h2 class="section_title">
-          Latest Completed <br />
-          Projects
-        </h2>
+        <div class="content">
+          <span class="section_subtitle"> OUR PROJECTS </span>
+          <h2 class="section_title">
+            Latest Completed <br />
+            Projects
+          </h2>
+        </div>
 
         <div class="projects_container container grid">
           <article class="projects_card">
@@ -358,9 +362,11 @@
 
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
-        <div class="container">
-          <span class="section_subtitle">CONTACT US</span>
-          <h2 class="section_title">Write To Us & Build</h2>
+        <div class="contact_container container">
+          <div class="content">
+            <span class="section_subtitle">CONTACT US</span>
+            <h2 class="section_title">Write To Us & Build</h2>
+          </div>
 
           <div class="contact_container grid">
             <img
@@ -524,9 +530,12 @@
     </footer>
 
     <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
+    <script src="./assets/js/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
     <script src="./assets/js/swiper-bundle.min.js"></script>
