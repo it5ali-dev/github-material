@@ -18,8 +18,8 @@ module.exports = {
       secondary: "Jost",
     },
     backgroundImage: {
-      hero: "URL(./assets/images/hero/bg.jpg)",
-      grid: "URL(./assets/images/grid.png)",
+      hero: "url(/assets/images/hero/bg.jpg)",
+      grid: "url(/assets/images/grid.png)",
     },
     extend: {
       colors: {
