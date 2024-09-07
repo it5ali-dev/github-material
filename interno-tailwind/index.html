@@ -22,13 +22,40 @@
   </head>
   <body class="bg-slate-100">
     <!-- header -->
-    <header class="sticky top-0 h-[90px] shadow-xl z-30">header</header>
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex items-center h-full justify-between">
+        <!-- logo -->
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </a>
+        <!-- nav -->
+        <nav>
+          <!-- hamburger -->
+          <div class="cursor-pointer lg:hidden" id="hamburger">
+            <i class="ri-menu-4-line text-4xl text-primary-default"></i>
+          </div>
+          <ul
+            id="nav_menu"
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <!-- page wrapper -->
     <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
       <!-- grid img -->
       <div
         class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 right-0 bottom-0 left-0 z-10"
       ></div>
+
       <!-- hero -->
       <section
         class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
@@ -52,6 +79,116 @@
           </div>
         </div>
       </section>
+
+      <!-- steps -->
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <!-- grid items -->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <!-- step 1 -->
+            <div class="steps_step text-center">
+              <div class="mb-4">
+                <i class="ri-compasses-2-line text-5xl text-accent-default"></i>
+              </div>
+              <h3 class="h3 mb-5">Project Planning</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                There are many variations of the passages of lorem Ipsum from
+                available, majority.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2">
+                Read more
+                <i class="ri-arrow-right-line text-accent-default"></i>
+              </a>
+            </div>
+
+            <!-- step 2 -->
+            <div class="steps_step text-center">
+              <div class="mb-4">
+                <i class="ri-magic-line text-5xl text-accent-default"></i>
+              </div>
+              <h3 class="h3 mb-5">Gaining Materials</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                There are many variations of the passages of lorem Ipsum from
+                available, majority.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2">
+                Read more
+                <i class="ri-arrow-right-line text-accent-default"></i>
+              </a>
+            </div>
+
+            <!-- step 3 -->
+            <div class="steps_step text-center">
+              <div class="mb-4">
+                <i class="ri-tools-line text-5xl text-accent-default"></i>
+              </div>
+              <h3 class="h3 mb-5">Project Execution</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                There are many variations of the passages of lorem Ipsum from
+                available, majority.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2">
+                Read more
+                <i class="ri-arrow-right-line text-accent-default"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"
+          >
+            <!-- text -->
+            <div
+              class="flex-1 order-2 xl:order-none max-w-xl xl:max-w-[410px] flex flex-col items-center xl:items-start gap-8"
+            >
+              <h2 class="h2">We Create The Art Of Stylish Living Stylishly</h2>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the of readable content of a page when lookings at its
+                layouts the points of using that it has a more-or-less normal.
+              </p>
+              <!-- phone -->
+              <div
+                class="flex items-center justify-center xl:justify-start gap-4"
+              >
+                <div
+                  class="bg-accent-default/15 w-[93px] h-[93px] rounded-full flex justify-center items-center"
+                >
+                  <i class="ri-phone-fill text-accent-default text-4xl"></i>
+                </div>
+
+                <div class="text-left">
+                  <div class="text-2xl font-bold">0323 23434893</div>
+                  <div>Call Us Anytime</div>
+                </div>
+              </div>
+              <!-- button -->
+              <button class="btn btn-primary">
+                Get free estimation
+                <i class="ri-arrow-right-line text-accent-default"></i>
+              </button>
+            </div>
+
+            <!-- img -->
+            <div
+              class="about_img order-1 xl:order-none max-w-[453px] mx-auto xl:max-w-none xl:mx-0"
+            >
+              <img src="./assets/images/about/img.png" alt="about" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonial -->
+      <section class="testimonial mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="testimonial_bg container mx-auto">testimonial</div>
+      </section>
+
       <!-- temporary div -->
       <div class="h-[3000px]"></div>
     </main>

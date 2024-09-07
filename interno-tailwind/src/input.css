@@ -42,3 +42,7 @@ h6 {
 .btn-accent {
   @apply bg-accent-default hover:bg-accent-hover;
 }
+
+.nav-open {
+  @apply h-[350px] p-6;
+}
