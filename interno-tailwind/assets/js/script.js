@@ -10,7 +10,7 @@ hamburger.addEventListener("click", function () {
 
 // swiper
 const swiper = new Swiper(".swiper", {
-  lopp: true,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
