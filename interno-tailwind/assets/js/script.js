@@ -32,3 +32,34 @@ const swiper = new Swiper(".swiper", {
 });
 
 // scroll reveal animation
+const sr = ScrollReveal({
+  origin: "bottom",
+  distance: "60px",
+  duration: 3000,
+  delay: 600,
+  reset: true,
+});
+
+// hero
+sr.reveal(
+  ".hero_text, .testimonial_title, .work_text, .news_text, .contact_container, .footer_copyright",
+  {
+    origin: "top",
+  }
+);
+
+// steps
+sr.reveal(
+  ".steps_step, .swiper-slide, .brands_img, .stats_item, .news_item, .footer_item",
+  {
+    /*origin: "top",*/
+    distance: "100px",
+    interval: 150,
+  }
+);
+
+// about
+sr.reveal(".about_text, .work_item1", { origin: "left", delay: 300 });
+sr.reveal(".about_img, .work_item2", { origin: "right", delay: 300 });
+
+// testimonial
