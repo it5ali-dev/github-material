@@ -62,15 +62,3 @@ const closeNav = () => {
 };
 
 closeBtn.addEventListener("click", closeNav);
-
-// contact
-// const submit = document.querySelector("#submit");
-// const inputs = document.getElementsByTagName("input");
-// const textArea = document.querySelector("textarea");
-
-// submit.addEventListener("click", () => {
-//   // inputs.forEach((input) => {
-//   // });
-//   inputs.value = "";
-//   textArea.value = "";
-// });

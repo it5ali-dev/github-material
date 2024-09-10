@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Site</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+
+    <!-- link Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+
+    <style>
+      body {
+        background-image: url("./assets/images/bg-texture.png");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="container nav_container">
+        <a href="./index.html">
+          <h4>Bloomefy</h4>
+        </a>
+
+        <ul class="nav_menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <button id="open-menu-btn">
+          <i class="ri-menu-4-line"></i>
+        </button>
+        <button id="close-menu-btn">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- contact -->
+    <section class="contact">
+      <div class="container contact_container">
+        <div class="contact_left">
+          <div class="contact_img">
+            <img src="./assets/images/contact.svg" alt="contact" />
+          </div>
+          <h2>Contact Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+            harum!
+          </p>
+
+          <div class="phone">
+            <i class="ri-phone-fill"></i>
+            <span>+92 300 000 0000</span>
+          </div>
+          <div class="phone">
+            <i class="ri-mail-line"></i>
+            <span>support@gmail.com</span>
+          </div>
+          <div class="phone">
+            <i class="ri-map-pin-line"></i>
+            <span>Sialkot, Pakistan</span>
+          </div>
+
+          <div class="contact_socials">
+            <i class="ri-facebook-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-linkedin-fill"></i>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/xldrkrdv" method="post">
+          <div class="contact_right">
+            <div class="name">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                required
+              />
+
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+
+            <div class="email">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Address"
+                required
+              />
+            </div>
+            <div class="contact_area">
+              <textarea rows="6" placeholder="Message" required></textarea>
+            </div>
+
+            <button id="submit" type="submit" class="btn btn-primary">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_1">
+          <a href="index.html" class="footer_logo">
+            <h4>Bloomefy</h4>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            dolorum.
+          </p>
+        </div>
+
+        <div class="footer_2">
+          <h4>Permalinks</h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+92 300 000 0000</p>
+            <p>contact@gmail.com</p>
+          </div>
+
+          <ul class="footer_socials">
+            <li>
+              <a href="#">
+                <i class="ri-facebook-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <small>Copyright &copy; Bloomefy. All rights are reserved.</small>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

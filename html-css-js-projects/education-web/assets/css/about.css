@@ -1,7 +1,5 @@
-/* @import url("./style.css"); */
-
 .about_hero {
-  height: 80vh;
+  /* height: 100vh; */
   width: 100%;
 }
 
@@ -10,6 +8,7 @@
   grid-template-columns: 40% 60%;
   align-items: center;
   gap: 4rem;
+  height: auto;
 }
 
 .about_hero_right h2 {
@@ -68,6 +67,7 @@
   width: 100%;
   background-color: var(--color-bg1);
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .team_cards {
@@ -86,26 +86,39 @@
   background: var(--color-bg2);
   border-radius: 2rem;
   position: relative;
-  cursor: pointer;
+  transition: var(--transition);
+  overflow: hidden;
 }
 
 .team_socials {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 3rem;
+  height: auto;
   display: flex;
   flex-direction: column;
+  top: 25%;
+  right: -100%;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   gap: 2rem;
   font-size: 1.3rem;
-  padding: 0 0.7rem 0 0;
-  display: none;
+  background: var(--color-primary);
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.5);
   transition: var(--transition);
 }
 
+.team_socials a {
+  padding: 1rem 0.5rem 0 0.7rem;
+}
+
+.team_card:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
 .team_card:hover .team_socials {
-  display: flex;
+  right: 0;
 }
 
 .team_card:hover img {
@@ -121,4 +134,39 @@
 
 .team_card h3 {
   margin: 1.5rem 0;
+}
+
+/* Media Table */
+@media screen and (max-width: 1024px) {
+  .about_hero_container {
+    grid-template-columns: 1fr;
+  }
+
+  .about_hero_left {
+    width: 80%;
+    margin: -3rem auto 2rem;
+  }
+
+  /* cards */
+  .team_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Media Mobile */
+@media screen and (max-width: 650px) {
+  /* hero cards */
+  .about_card {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about_card .card {
+    padding: 2rem;
+  }
+  /* team cards */
+  .team {
+    margin-top: 10rem;
+  }
+  .team_cards {
+    grid-template-columns: 1fr;
+  }
 }
