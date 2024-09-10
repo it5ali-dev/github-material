@@ -315,3 +315,108 @@ nav button {
 .faq.open p {
   display: block;
 }
+
+/* Testimonials */
+.testimonial_container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem; */
+}
+
+.test {
+  padding-top: 2rem;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1rem solid var(--color-bg1);
+  margin: 0 auto 1rem;
+}
+
+.test_info {
+  text-align: center;
+  /* filter: drop-shadow(rgb(0, 0, 0) 1rem 1rem 1rem); */
+}
+
+.test_body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.test_body::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary),
+    var(--color-primary)
+  );
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 46%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
+
+.swiper-wrapper {
+  margin-bottom: 4rem;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: var(--color-white);
+}
+
+/* footer */
+.footer {
+  background: var(--color-bg1);
+  padding-top: 5rem;
+  font-size: 0.9rem;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  padding-bottom: 2rem;
+}
+
+.footer_container > div h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer_1 p {
+  margin: 0 0 2rem;
+}
+
+.footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer_socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.copy {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-bg2);
+}

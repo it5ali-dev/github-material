@@ -23,3 +23,23 @@ faqs.forEach((faq) => {
     }
   });
 });
+
+// Swiper testimonials
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  //   breakpoint
+  slidesPerView: 2,
+  spaceBetween: 20,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    960: {
+      slidesPerView: 2,
+    },
+  },
+});
