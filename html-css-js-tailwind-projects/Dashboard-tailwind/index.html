@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css"
+    />
+  </head>
+  <body class="bg-slate-100 overflow-x-hidden">
+    <div
+      class="w-[100%] h-auto grid lg:grid-cols-[15%_65%_20%] grid-cols-[1fr]"
+    >
+      <div
+        class="left h-screen w-full lg:flex flex-col justify-between items-center pt-2 pb-14 hidden"
+      >
+        <div class="flex flex-col gap-10">
+          <div
+            class="logo flex justify-center items-center gap-2 cursor-pointer"
+          >
+            <i class="ri-bar-chart-horizontal-fill text-2xl"></i>
+            <span class="text-2xl font-bold">Bloomefy</span>
+          </div>
+
+          <div class="flex flex-col justify-center items-start">
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 active cursor-pointer hover:scale-105"
+            >
+              <i class="ri-layout-masonry-fill text-xl"></i>
+              <span>Dashboard</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-group-line text-xl"></i>
+              <span>Customers</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-survey-line text-xl"></i>
+              <span>Orders</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-line-chart-line text-xl"></i>
+              <span>Analytics</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-mail-line text-xl"></i>
+              <span>Messages</span>
+              <span
+                class="py-[2px] px-[4px] bg-red-500 text-white text-xs rounded-sm"
+                >25</span
+              >
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-sticky-note-add-line text-xl"></i>
+              <span>Products</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-spam-2-line text-xl"></i>
+              <span>Reports</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-settings-5-fill text-xl"></i>
+              <span>Setting</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-add-line text-xl"></i>
+              <span>Add Product</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <div
+            class="flex items-center justify-start gap-4 w-[140%] py-3 px-4 cursor-pointer hover:scale-105"
+          >
+            <i class="ri-logout-box-r-line"></i>
+            <span>Logout</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bars lg:hidden w-full flex justify-start items-center px-6 py-4 text-3xl cursor-pointer font-bold"
+      >
+        <i id="hamburger" class="ri-menu-4-line"></i>
+        <i id="close" class="ri-close-line hidden"></i>
+      </div>
+
+      <!-- mobile version -->
+      <div
+        class="left_small h-screen w-[50%] flex flex-col justify-between items-center absolute z-20 -left-80 top-16 pt-2 pb-14 lg:hidden bg-slate-300 transition-all duration-200"
+      >
+        <div class="flex flex-col gap-10 py-8">
+          <div class="flex flex-col justify-center items-start">
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-layout-masonry-fill text-xl"></i>
+              <span>Dashboard</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-group-line text-xl"></i>
+              <span>Customers</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-survey-line text-xl"></i>
+              <span>Orders</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-line-chart-line text-xl"></i>
+              <span>Analytics</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-mail-line text-xl"></i>
+              <span>Messages</span>
+              <span
+                class="py-[2px] px-[4px] bg-red-500 text-white text-xs rounded-sm"
+                >25</span
+              >
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-sticky-note-add-line text-xl"></i>
+              <span>Products</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-spam-2-line text-xl"></i>
+              <span>Reports</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-settings-5-fill text-xl"></i>
+              <span>Setting</span>
+            </div>
+
+            <div
+              class="flex items-center justify-start gap-4 w-full py-3 px-4 cursor-pointer hover:scale-105"
+            >
+              <i class="ri-add-line text-xl"></i>
+              <span>Add Product</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <div
+            class="flex items-center justify-start gap-4 w-[140%] py-3 px-4 cursor-pointer hover:scale-105"
+          >
+            <i class="ri-logout-box-r-line"></i>
+            <span>Logout</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="center px-6 py-2 flex flex-col justify-center items-start">
+        <div class="title">
+          <h2 class="text-2xl font-bold">Dashboard</h2>
+        </div>
+
+        <div class="date">
+          <input type="date" class="px-5 py-2 rounded-md mt-2 mb-3" />
+        </div>
+
+        <div
+          class="grid lg:grid-cols-3 grid-cols-1 place-content-center w-full gap-8"
+        >
+          <div
+            class="flex justify-center items-center h-48 lg:w-auto w-full gap-8 bg-white p-10 rounded-xl shadow-lg cursor-pointer"
+          >
+            <div class="card1_left">
+              <div
+                class="card_icon bg-blue-500 text-white w-10 h-10 flex justify-center items-center text-2xl rounded-full"
+              >
+                <i class="ri-bar-chart-box-line"></i>
+              </div>
+              <h4 class="font-medium text-lg mt-3">Total Sales</h4>
+              <h2 class="font-bold text-2xl mb-3">$25,024</h2>
+              <p class="text-slate-500 text-sm">last 24 hours</p>
+            </div>
+
+            <img src="./assets/images/images.png" alt="chart" class="w-28" />
+
+            <!-- <div
+              class="card1_right h-24 w-24 rounded-full border-[10px] border-blue-500 border-b-0 border-l-0 flex justify-center items-center"
+            >
+              77%
+            </div> -->
+          </div>
+
+          <div
+            class="flex justify-center items-center h-48 gap-8 bg-white p-10 w-full rounded-xl shadow-lg cursor-pointer"
+          >
+            <div class="card1_left">
+              <div
+                class="card_icon bg-blue-500 text-white w-10 h-10 flex justify-center items-center text-2xl rounded-full"
+              >
+                <i class="ri-bar-chart-box-line"></i>
+              </div>
+              <h4 class="font-medium text-lg mt-3">Total Sales</h4>
+              <h2 class="font-bold text-2xl mb-3">$25,024</h2>
+              <p class="text-slate-500 text-sm">last 24 hours</p>
+            </div>
+
+            <img src="./assets/images/images.png" alt="chart" class="w-28" />
+
+            <!-- <div
+              class="card1_right h-24 w-24 rounded-full border-[10px] border-blue-500 border-b-0 border-l-0 flex justify-center items-center"
+            >
+              77%
+            </div> -->
+          </div>
+
+          <div
+            class="flex justify-center items-center h-48 gap-8 bg-white p-10 w-full rounded-xl shadow-lg cursor-pointer"
+          >
+            <div class="card1_left">
+              <div
+                class="card_icon bg-blue-500 text-white w-10 h-10 flex justify-center items-center text-2xl rounded-full"
+              >
+                <i class="ri-bar-chart-box-line"></i>
+              </div>
+              <h4 class="font-medium text-lg mt-3">Total Sales</h4>
+              <h2 class="font-bold text-2xl mb-3">$25,024</h2>
+              <p class="text-slate-500 text-sm">last 24 hours</p>
+            </div>
+
+            <img src="./assets/images/images.png" alt="chart" class="w-28" />
+
+            <!-- <div
+              class="card1_right h-24 w-24 rounded-full border-[10px] border-blue-500 border-b-0 border-l-0 flex justify-center items-center"
+            >
+              77%
+            </div> -->
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-bold mt-3 mb-2">RECENT ORDERS</h3>
+
+        <div class="w-full shadow-lg">
+          <div
+            class="w-full bg-white py-5 lg:px-16 px-6 rounded-2xl grid lg:grid-cols-5 grid-cols-4 justify-center items-center text-center"
+          >
+            <h5 class="col font-bold mb-3">Product Name</h5>
+            <h5 class="col font-bold mb-3 hidden lg:block">Product Number</h5>
+            <h5 class="col font-bold mb-3">Payment</h5>
+            <h5 class="col font-bold mb-3">Status</h5>
+            <h5 class="col font-bold mb-3"></h5>
+
+            <div>
+              <p class="mb-2 border-b">Ali Hassan</p>
+              <p class="mb-2 border-b">Ali Hassan</p>
+              <p class="mb-2 border-b">Ali Hassan</p>
+              <p class="mb-2 border-b">Ali Hassan</p>
+              <p class="mb-2 border-b">Ali Hassan</p>
+              <p class="mb-2 border-b">Ali Hassan</p>
+              <p class="mb-2 border-b">Ali Hassan</p>
+            </div>
+
+            <div class="lg:block hidden">
+              <p class="mb-2 border-b">123</p>
+              <p class="mb-2 border-b">123</p>
+              <p class="mb-2 border-b">123</p>
+              <p class="mb-2 border-b">123</p>
+              <p class="mb-2 border-b">123</p>
+              <p class="mb-2 border-b">123</p>
+              <p class="mb-2 border-b">123</p>
+            </div>
+
+            <div>
+              <p class="mb-2 border-b">Due</p>
+              <p class="mb-2 border-b">Refund</p>
+              <p class="mb-2 border-b">Paid</p>
+              <p class="mb-2 border-b">Paid</p>
+              <p class="mb-2 border-b">Due</p>
+              <p class="mb-2 border-b">Due</p>
+              <p class="mb-2 border-b">Refund</p>
+            </div>
+
+            <div>
+              <p class="mb-2 border-b">Pending</p>
+              <p class="mb-2 border-b">Delined</p>
+              <p class="mb-2 border-b">Pending</p>
+              <p class="mb-2 border-b">Delivered</p>
+              <p class="mb-2 border-b">Delivered</p>
+              <p class="mb-2 border-b">Pending</p>
+              <p class="mb-2 border-b">Delivered</p>
+            </div>
+
+            <div>
+              <p class="mb-2 border-b">Details</p>
+              <p class="mb-2 border-b">Details</p>
+              <p class="mb-2 border-b">Details</p>
+              <p class="mb-2 border-b">Details</p>
+              <p class="mb-2 border-b">Details</p>
+              <p class="mb-2 border-b">Details</p>
+              <p class="mb-2 border-b">Details</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="all text-blue-500 text-center w-full mt-3 cursor-pointer">
+          Show All
+        </div>
+      </div>
+
+      <div
+        class="right flex flex-col justify-between px-4 pb-6 pt-2 lg:mt-0 mt-6"
+      >
+        <div class="flex justify-between items-center">
+          <!-- mode -->
+          <div class="mode">
+            <button><i class="ri-sun-line"></i></button>
+            <button><i class="ri-moon-fill"></i></button>
+          </div>
+
+          <div class="flex items-center justify-center gap-4">
+            <div class="flex flex-col justify-center items-end text-sm">
+              <p>Hey <span class="font-bold">Daniel</span></p>
+              <span>Adam</span>
+            </div>
+            <div class="profile w-12 h-12 rounded-full overflow-hidden">
+              <img
+                src="./assets/images/profile-1.jpg"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-xl font-bold lg:-mt-2 mt-4">Recent Updates</h2>
+        <div
+          class="flex flex-col items-center justify-center p-6 rounded-xl gap-2 text-xs bg-white lg:-my-2 my-4"
+        >
+          <div class="flex items-center justify-center gap-4">
+            <div class="profile lg:w-14 w-10 h-10 rounded-full overflow-hidden">
+              <img
+                src="./assets/images/profile-2.jpg"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>
+                <span class="font-bold">Mike Tyson</span> Lorem ipsum dolor sit,
+                amet consectetur.
+              </p>
+              <small>2 minutes ago</small>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-4">
+            <div class="profile lg:w-14 w-10 h-10 rounded-full overflow-hidden">
+              <img
+                src="./assets/images/profile-3.jpg"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div>
+              <p>
+                <span class="font-bold">Danial Ayi</span> Lorem ipsum dolor sit,
+                amet consectetur.
+              </p>
+              <small>8 minutes ago</small>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-4">
+            <div class="profile lg:w-14 w-10 h-10 rounded-full overflow-hidden">
+              <img
+                src="./assets/images/profile-4.jpg"
+                class="w-full h-full"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <p>
+                <span class="font-bold">Mandy Roy</span> Lorem ipsum dolor sit,
+                amet consectetur.
+              </p>
+              <small>20 minutes ago</small>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-xl font-bold lg:mt-2 mt-4">Sales Analytics</h2>
+
+        <div
+          class="text-sm flex justify-between p-4 rounded-xl shadow-lg bg-white lg:-mt-2 mt-6"
+        >
+          <div
+            class="icon w-10 h-10 text-xl flex items-center justify-center text-white rounded-full bg-blue-500"
+          >
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+
+          <div>
+            <span class="font-bold">ONLINE ORDERS</span>
+            <p class="text-sm text-slate-500">last 24 hours</p>
+          </div>
+
+          <span class="text-green-500">+39%</span>
+
+          <p class="font-bold">3839</p>
+        </div>
+
+        <div
+          class="text-sm flex justify-between p-4 rounded-xl shadow-lg bg-white lg:my-0 my-4"
+        >
+          <div
+            class="icon w-10 h-10 text-xl flex items-center justify-center text-white rounded-full bg-blue-500"
+          >
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+
+          <div>
+            <span class="font-bold">ONLINE ORDERS</span>
+            <p class="text-sm text-slate-500">last 24 hours</p>
+          </div>
+
+          <span class="text-green-500">+39%</span>
+
+          <p class="font-bold">3839</p>
+        </div>
+
+        <div
+          class="text-sm flex justify-between p-4 rounded-xl shadow-lg bg-white"
+        >
+          <div
+            class="icon w-10 h-10 text-xl flex items-center justify-center text-white rounded-full bg-blue-500"
+          >
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+
+          <div>
+            <span class="font-bold">ONLINE ORDERS</span>
+            <p class="text-sm text-slate-500">last 24 hours</p>
+          </div>
+
+          <span class="text-green-500">+39%</span>
+
+          <p class="font-bold">3839</p>
+        </div>
+
+        <div
+          class="add flex justify-center items-center gap-5 p-5 hover:border-solid hover:bg-blue-500 hover:text-white transition-all duration-300 cursor-pointer border-2 border-dashed rounded-xl border-blue-500 lg:mt-2 mt-8"
+        >
+          <i class="ri-add-line"></i>
+          <span>Add Product</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="./main.js"></script>
+  </body>
+</html>
