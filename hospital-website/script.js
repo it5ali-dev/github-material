@@ -19,3 +19,36 @@ const closeMenu = () => {
 };
 
 closeNav.addEventListener("click", closeMenu);
+
+// Close nan menu when menu item is clicked
+if (window.innerWidth < 1024) {
+  document.querySelectorAll("#nav_items  li a").forEach((navItem) => {
+    navItem.addEventListener("click", closeMenu);
+  });
+}
+
+// Change navbar color
+window.addEventListener("scroll", () => {
+  document
+    .querySelector("nav")
+    .classList.toggle("window-scroll", window.scrollY > 0);
+});
+
+// Swiper JS
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
