@@ -8,9 +8,6 @@
     <link rel="icon" href="./assets/favicon.png" type="image/png" />
     <title>Ali Hassan</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="style.css" />
-
     <!-- links -->
     <link
       rel="stylesheet"
@@ -21,8 +18,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="">
     <!-- Start Nav -->
     <nav>
       <div class="container nav_container">
@@ -40,6 +41,7 @@
 
         <div class="nav_buttons">
           <button class="nav_theme"><i class="ri-moon-fill"></i></button>
+          <!-- <button class="nav_bright"><i class="ri-sun-line"></i></button> -->
           <button class="nav_open"><i class="ri-menu-4-line"></i></button>
           <button class="nav_close"><i class="ri-close-line"></i></button>
         </div>
@@ -51,11 +53,11 @@
     <!-- start header -->
     <header>
       <div class="container header_container">
-        <article class="header_image">
+        <article class="header_image" data-aos="fade-up" data-aos-delay="500">
           <img src="./assets/ali-6.jpg" alt="header-img" />
         </article>
 
-        <article class="header_content">
+        <article class="header_content" data-aos="fade-in">
           <h4>Hi, I'm <span>Ali Hassan</span>. And I'll</h4>
           <h1>Get you business <br />online the right way</h1>
           <p>
@@ -96,12 +98,13 @@
 
     <!-- start about -->
     <section id="about" class="about">
+      <h1 class="extra">About me</h1>
       <div class="container about_container">
-        <div class="about_image">
+        <div class="about_image" data-aos="fade-right">
           <img src="./assets/ali-7.jpg" alt="about-img" />
         </div>
-        <div class="about_details">
-          <h1>About me</h1>
+        <div class="about_details" data-aos="fade-left">
+          <h1 class="extra1">About me</h1>
           <div class="about_cards">
             <article class="about_card">
               <i class="ri-award-line"></i>
@@ -159,7 +162,7 @@
       </p>
 
       <div class="container services_container">
-        <ul class="services_left">
+        <ul class="services_left" data-aos="fade-right">
           <li class="service_item frontend active">
             <span><i class="ri-computer-line"></i></span>
             <div>
@@ -185,7 +188,7 @@
           </li>
         </ul>
 
-        <article class="services_right"></article>
+        <article class="services_right" data-aos="fade-left"></article>
       </div>
     </section>
     <!-- end services -->
@@ -205,7 +208,7 @@
         <li data-filter=".fullstack">Fullstack</li>
       </ul>
 
-      <div class="container projects_container">
+      <div class="container projects_container" data-aos="fade-up">
         <article class="project mix frontend" data-order="1">
           <div class="project_image">
             <img src="./assets/project7.jpg" alt="project-1" />
@@ -348,7 +351,7 @@
     <!-- end Projects -->
 
     <!-- start testimonials -->
-    <section id="testimonial" class="swiper">
+    <section id="testimonial" class="swiper" data-aos="fade-up">
       <h1>What my clients say</h1>
       <p>This is what my clients say about me and my work.</p>
 
@@ -456,7 +459,7 @@
     <!-- start contact -->
     <section id="contact" class="contact">
       <div class="container contact_container">
-        <ul class="contact_list">
+        <ul class="contact_list" data-aos="fade-right">
           <li>
             <a
               href="mailto:alihassndev@gmail.com"
@@ -497,6 +500,7 @@
           action="https://formspree.io/f/movagnwy"
           method="POST"
           class="contact_form"
+          data-aos="fade-left"
         >
           <input type="text" name="Name" placeholder="Full Name" />
           <input type="email" name="Email" placeholder="Email Address" />
@@ -511,7 +515,7 @@
 
     <!-- start footer -->
     <footer>
-      <div class="container footer_container">
+      <div class="container footer_container" data-aos="fade-up">
         <ul class="footer_menu">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -553,6 +557,15 @@
     <!-- js links -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./mix/dist/mixitup.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        offset: 80,
+      });
+    </script>
+
     <script src="./data.js"></script>
     <script src="./script.js"></script>
   </body>
