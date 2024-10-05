@@ -54,12 +54,12 @@ sr.reveal(
   {
     /*origin: "top",*/
     distance: "100px",
-    interval: 150,
+    interval: 100,
   }
 );
 
 // about
-sr.reveal(".about_text, .work_item1", { origin: "left", delay: 300 });
-sr.reveal(".about_img, .work_item2", { origin: "right", delay: 300 });
+sr.reveal(".about_text, .work_item1", { origin: "left", delay: 150 });
+sr.reveal(".about_img, .work_item2", { origin: "right", delay: 150 });
 
 // testimonial
